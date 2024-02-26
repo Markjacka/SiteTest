@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Car Objects</title>
+</head>
+<body>
+
+<script>
+    function Car(color, brand, doors) {
+        this.color = color;
+        this.brand = brand;
+        this.doors = doors;
+        this.startEngine = function () {
+            console.log('Starting ' + this.brand + ' engine');
+        };
+    }
+
+    const car1 = new Car('red', 'BMW', 'four');
+    const car2 = new Car('white', 'Mercedes', 'four');
+
+    console.log(car1);
+    console.log(car2);
+
+    car1.startEngine();
+    car2.startEngine();
+</script>
+
+</body>
+</html>
